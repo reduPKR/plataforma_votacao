@@ -25,7 +25,7 @@ public class VotoControllerGet {
         if(optional.isPresent()){
             List lista = optional.get();
             VotacaoMapping mapping = new VotacaoMapping();
-            return mapping.Analise(lista);
+            return mapping.analise(lista);
         }
         return null;
     }

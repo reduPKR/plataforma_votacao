@@ -6,5 +6,5 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 public interface EleitorRepository extends JpaRepository<EleitorEntity, Long> {
-    Optional<EleitorEntity> findByCodigoValidacao(String codigoEleitor);
+    Optional<EleitorEntity> findByCodigoValidacao(long codigoEleitor);
 }

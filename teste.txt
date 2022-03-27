@@ -1,0 +1,25 @@
+{
+"nome": "Redu",
+"cpf": "87435187372",
+"codigoValidacao": -1182076795
+},
+{
+"nome": "Rafa",
+"cpf": "23352658226",
+"codigoValidacao": -206637144
+},
+{
+"nome": "edu",
+"cpf": "54524916431",
+"codigoValidacao": -1265576746
+},
+{
+"nome": "pato",
+"cpf": "35746765228",
+"codigoValidacao": 1691476537
+},
+{
+"nome": "wolf",
+"cpf": "79991474439",
+"codigoValidacao": -1422034572
+}

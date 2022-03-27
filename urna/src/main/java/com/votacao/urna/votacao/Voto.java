@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 public class Voto {
     private Long id;
     private String cpfEleitor;
-    private  String codigoEleitor;
+    private  long codigoEleitor;
     private String codidoCanditado;
 
     public Voto(Long id, VotacaoRequest votacaoRequest) {

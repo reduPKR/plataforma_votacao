@@ -34,7 +34,7 @@ public class KafkaConsumer {
         System.out.println(record.value());
 
         try {
-            Thread.sleep(100);
+            Thread.sleep(1000);
             Voto voto = record.value();
 
             if(candidatoService.validar(voto)){

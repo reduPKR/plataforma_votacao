@@ -30,7 +30,7 @@ public class KafkaService<T> {
 
     public void run() {
       while (true) {
-            var records = consumer.poll(Duration.ofMillis(100));
+            var records = consumer.poll(Duration.ofMillis(10000));
             if (!records.isEmpty()) {
                 System.out.println(records.count() + " registros");
                 for (var record : records) {

@@ -15,7 +15,7 @@ public class VotacaoRequest {
     @CPF
     private String cpfEleitor;
     @NotNull
-    private  String codigoEleitor;
+    private  long codigoEleitor;
     @NotNull
     private String codidoCanditado;
 }

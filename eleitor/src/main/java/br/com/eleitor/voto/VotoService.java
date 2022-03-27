@@ -22,7 +22,10 @@ public class VotoService {
         Optional<VotoEntity> optional = votoRepository.findById(voto.getId());
 
         if(optional.isPresent()){
+            System.out.println("retornou o optional "+optional);
             VotoEntity entity = optional.get();
+            System.out.println("retornou o entity "+entity);
+
             entity.aprovaEleitor();
             votoRepository.save(entity);
         }else {
