@@ -13,7 +13,7 @@ import java.util.concurrent.ExecutionException;
 
 @RestController
 @RequestMapping("/votar")
-public class VotoController {
+public class VotoControllerPost {
     @Autowired
     private VotoRepository votoRepository;
 
@@ -21,7 +21,7 @@ public class VotoController {
     public String post(@Validated @RequestBody VotacaoRequest votacaoRequest){
         try {
             VotacaoMapping votacaoMapping = new VotacaoMapping();
-            VotoEntity votoEntity = VotacaoMapping.toEntity();
+            VotoEntity votoEntity = VotacaoMapping.toEntity(votacaoRequest.getCodidoCanditado());
 
             votoRepository.save(votoEntity);
 
