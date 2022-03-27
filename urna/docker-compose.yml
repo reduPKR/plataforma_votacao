@@ -23,6 +23,19 @@ services:
       - kafka
       - urna-jdbc
 
+  eleitor-jdbc:
+    image: eleitor-jdbc
+    ports:
+      - "8082:8080"
+    networks:
+      - rede-eleicao
+    depends_on:
+      - mysqldb
+      - zookeeper
+      - kafka
+      - urna-jdbc
+      - candidato-jdbc
+
   mysqldb:
     image: mysql:8
     networks:

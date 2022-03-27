@@ -41,8 +41,7 @@ public class VotoController {
 
     private void validar(Voto voto, String chave) throws ExecutionException, InterruptedException{
         KafkaDispatcher dispatcher = new KafkaDispatcher<Voto>();
-      //  dispatcher.send(Topicos.VALIDAR_VOTO_ELEITOR.name(), chave, voto);
+        dispatcher.send(Topicos.VALIDAR_VOTO_ELEITOR.name(), chave, voto);
         dispatcher.send(Topicos.VALIDAR_VOTO_CANDIDATO.name(), chave, voto);
-       // dispatcher.send(Topicos.VALIDAR_NOVO_VOTO.name(), chave, voto);
     }
 }
